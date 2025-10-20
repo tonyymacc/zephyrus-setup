@@ -1,62 +1,62 @@
 #!/bin/bash
 
-for script in packages.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh shell.sh; do
-  [[ -f "$script" ]] || {
+for script in packages.sh nvim.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh shell.sh; do
+  [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
   }
 done
 
 echo "Installing packages..."
-bash packages.sh || {
+bash "$HOME/zephyrus-setup/packages.sh" || {
   echo "packages.sh failed!"
   exit 1
 }
 
 echo "Installing LazyVim..."
-bash nvim.sh || {
+bash "$HOME/zephyrus-setup/nvim.sh" || {
   echo "nvim.sh failed!"
   exit 1
 }
 
 echo "Copying dotfiles..."
-bash copy.sh || {
+bash "$HOME/zephyrus-setup/copy.sh" || {
   echo "copy.sh failed!"
   exit 1
 }
 
 echo "Configuring network..."
-bash network.sh || {
+bash "$HOME/zephyrus-setup/network.sh" || {
   echo "network.sh failed!"
   exit 1
 }
 
 echo "Configuring autologin..."
-bash autologin.sh || {
+bash "$HOME/zephyrus-setup/autologin.sh" || {
   echo "autologin.sh failed!"
   exit 1
 }
 
 echo "Configuring AMD settings..."
-bash AMD.sh || {
+bash "$HOME/zephyrus-setup/AMD.sh" || {
   echo "AMD.sh failed!"
   exit 1
 }
 
 echo "Configuring Nvidia settings..."
-bash nvidia.sh || {
+bash "$HOME/zephyrus-setup/nvidia.sh" || {
   echo "nvidia.sh failed!"
   exit 1
 }
 
 echo "Configuring Hyprland..."
-bash hyprlandia.sh || {
+bash "$HOME/zephyrus-setup/hyprlandia.sh" || {
   echo "hyprlandia.sh failed!"
   exit 1
 }
 
 echo "Changing user shell to fish..."
-bash shell.sh || {
+bash "$HOME/zephyrus-setup/shell.sh" || {
   echo "shell.sh failed!"
   exit 1
 }
