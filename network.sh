@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo systemctl enable --now iwd
+sudo systemctl enable --now iwd.service

@@ -1,8 +1,11 @@
 #!/bin/bash
+mkdir -p ~/.config
 cp -rf \
   hypr \
   fish \
+  nvim \
   wallpapers \
-  waybar ~/.config/
+  waybar \
+  yazi ~/.config/
 
 echo "Copy done!"
