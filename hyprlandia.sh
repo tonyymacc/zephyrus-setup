@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo systemctl --user enable --now hypridle.service
+sudo systemctl --machine=$USER@.host --user enable --now hypridle.service
