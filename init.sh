@@ -7,11 +7,6 @@ for script in preflight.sh packages.sh copy.sh network.sh autologin.sh AMD.sh nv
   }
 done
 
-bash preflight.sh || {
-  echo "preflight.sh failed!"
-  exit 1
-}
-
 echo "Installing packages..."
 bash packages.sh || {
   echo "packages.sh failed!"
