@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for script in preflight.sh packages.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh shell.sh; do
+for script in packages.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh shell.sh; do
   [[ -f "$script" ]] || {
     echo "$script not found!"
     exit 1
