@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+echo "Installing packages..."
 yay -S --needed --noconfirm \
   alacritty \
   bash-completion \
@@ -33,7 +36,7 @@ yay -S --needed --noconfirm \
   nautilus \
   neovim \
   nodejs \
-  nvidia-open-dkms \
+  nvidia-dkms \
   nvidia-utils \
   nwg-look \
   openssh \
@@ -54,4 +57,4 @@ yay -S --needed --noconfirm \
   zoxide \
   ags-hyprpanel-git
 
-echo "Packages done!"
+echo "Installation complete!"
