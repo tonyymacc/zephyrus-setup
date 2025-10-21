@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for script in packages.sh nvim.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh; do
+for script in packages.sh nvim.sh copy.sh network.sh autologin.sh amd.sh nvidia.sh; do
   [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
@@ -38,7 +38,7 @@ bash "$HOME/zephyrus-setup/autologin.sh" || {
 }
 
 echo "Configuring AMD settings..."
-bash "$HOME/zephyrus-setup/AMD.sh" || {
+bash "$HOME/zephyrus-setup/amd.sh" || {
   echo "AMD.sh failed!"
   exit 1
 }

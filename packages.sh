@@ -29,16 +29,16 @@ sudo pacman -S --needed --noconfirm \
   mako \
   nano \
   nano-syntax-highlighting \
-  nerd-fonts \
+  nautilus \
   neovim \
   nodejs \
-  noto-fonts \
   nvidia-open-dkms \
   nvidia-utils \
   nwg-look \
   openssh \
   pamixer \
   starship \
+  ttf-jetbrains-mono-nerd \
   udiskie \
   uwsm \
   waybar \
@@ -51,5 +51,8 @@ sudo pacman -S --needed --noconfirm \
   xorg-xwayland \
   yazi \
   zoxide
+
+sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+yay -S --noconfirm ags-hyprpanel-git
 
 echo "Packages done!"
