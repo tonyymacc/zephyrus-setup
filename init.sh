@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for script in yay.sh packages.sh nvim.sh copy.sh network.sh autologin.sh amd.sh nvidia.sh; do
+for script in yay.sh packages.sh nvim.sh copy.sh autologin.sh amd.sh nvidia.sh; do
   [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
@@ -28,12 +28,6 @@ bash "$HOME/zephyrus-setup/nvim.sh" || {
 echo "Copying dotfiles..."
 bash "$HOME/zephyrus-setup/copy.sh" || {
   echo "copy.sh failed!"
-  exit 1
-}
-
-echo "Configuring network..."
-bash "$HOME/zephyrus-setup/network.sh" || {
-  echo "network.sh failed!"
   exit 1
 }
 
