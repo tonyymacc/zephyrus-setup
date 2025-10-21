@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo pacman -S --needed --noconfirm \
   alacritty \
-  bash-autocompletion \
+  bash-completion \
   bat \
   bluetui \
   brightnessctl \

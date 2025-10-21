@@ -11,6 +11,7 @@ cp -rf "$HOME/zephyrus-setup/hypr" "$HOME/zephyrus-setup/nvim" "$HOME/zephyrus-s
   exit 1
 }
 
+cp -rf "$HOME/zephyrus-setup/.bash_profile" "$HOME/"
 cp -rf "$HOME/zephyrus-setup/.bashrc" "$HOME/"
 
 echo "Copy done!"
