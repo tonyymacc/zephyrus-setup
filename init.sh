@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for script in packages.sh nvim.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh shell.sh; do
+for script in packages.sh nvim.sh copy.sh network.sh autologin.sh AMD.sh nvidia.sh hyprlandia.sh uwsm.sh; do
   [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
@@ -55,9 +55,9 @@ bash "$HOME/zephyrus-setup/hyprlandia.sh" || {
   exit 1
 }
 
-echo "Changing user shell to fish..."
-bash "$HOME/zephyrus-setup/shell.sh" || {
-  echo "shell.sh failed!"
+echo "Configuring UWSM..."
+bash "$HOME/zephyrus-setup/uwsm.sh" || {
+  echo "uwsm.sh failed!"
   exit 1
 }
 

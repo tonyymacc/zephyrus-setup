@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo pacman -S --needed --noconfirm \
   alacritty \
+  bash-autocompletion \
   bat \
   bluetui \
   brightnessctl \
@@ -9,7 +10,6 @@ sudo pacman -S --needed --noconfirm \
   eza \
   fd \
   firefox \
-  fish \
   fzf \
   git \
   hypridle \
@@ -20,7 +20,6 @@ sudo pacman -S --needed --noconfirm \
   hyprpolkitagent \
   impala \
   iwd \
-  kitty \
   kvantum \
   lazygit \
   libnewt \
