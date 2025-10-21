@@ -1,12 +1,14 @@
 #!/bin/bash
-sudo pacman -S --needed --noconfirm \
+yay -S --needed --noconfirm \
   alacritty \
   bash-completion \
   bat \
-  bluetui \
   brightnessctl \
+  cargo \
   dkms \
   egl-wayland \
+  elephant \
+  elephant-desktopapplications \
   eza \
   fd \
   firefox \
@@ -18,7 +20,6 @@ sudo pacman -S --needed --noconfirm \
   hyprpaper \
   hyprpicker \
   hyprpolkitagent \
-  impala \
   iwd \
   kvantum \
   lazygit \
@@ -41,18 +42,16 @@ sudo pacman -S --needed --noconfirm \
   ttf-jetbrains-mono-nerd \
   udiskie \
   uwsm \
+  walker \
   waybar \
   wayland-protocols \
-  wiremix \
   wireplumber \
   wl-clip-persist \
   wl-clipboard \
   xdg-desktop-portal-hyprland \
   xorg-xwayland \
   yazi \
-  zoxide
-
-sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -S --noconfirm ags-hyprpanel-git
+  zoxide \
+  ags-hyprpanel-git
 
 echo "Packages done!"

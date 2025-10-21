@@ -1,11 +1,17 @@
 #!/bin/bash
 
-for script in packages.sh nvim.sh copy.sh network.sh autologin.sh amd.sh nvidia.sh; do
+for script in yay.sh packages.sh nvim.sh copy.sh network.sh autologin.sh amd.sh nvidia.sh; do
   [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
   }
 done
+
+echo "Installing yay..."
+bash "$HOME/zephyrus-setup/yay.sh" || {
+  echo "yay.sh failed!"
+  exit 1
+}
 
 echo "Installing packages..."
 bash "$HOME/zephyrus-setup/packages.sh" || {
