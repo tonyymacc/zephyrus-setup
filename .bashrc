@@ -61,15 +61,10 @@ set visible-stats on
 set skip-completed-text on
 set colored-stats on
 
-# Key bindings
-"\e[A": history-search-backward
-"\e[B": history-search-forward
-"\e[C": forward-char
-"\e[D": backward-char
-
 # Path
 export PATH="$HOME/.local/bin:$PATH"
 set +h
+export EDITOR=nvim
 
 # Initialize tools
 if command -v starship &>/dev/null; then

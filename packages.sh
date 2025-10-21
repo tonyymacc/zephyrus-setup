@@ -36,6 +36,7 @@ sudo pacman -S --needed --noconfirm \
   nvidia-open-dkms \
   nvidia-utils \
   nwg-look \
+  openssh \
   pamixer \
   starship \
   udiskie \
