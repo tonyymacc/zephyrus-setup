@@ -8,13 +8,16 @@ yay -S --needed --noconfirm \
   bat \
   brightnessctl \
   cargo \
+  clang \
   dkms \
   egl-wayland \
   elephant \
   elephant-desktopapplications \
+  evince \
   eza \
   fd \
   firefox \
+  ffmpegthumbnailer \
   fzf \
   git \
   hypridle \
@@ -23,7 +26,7 @@ yay -S --needed --noconfirm \
   hyprpaper \
   hyprpicker \
   hyprpolkitagent \
-  iwd \
+  imv \
   kvantum \
   lazygit \
   libnewt \
@@ -35,22 +38,27 @@ yay -S --needed --noconfirm \
   nano-syntax-highlighting \
   nautilus \
   neovim \
+  networkmanager \
   nodejs \
   nvidia-dkms \
   nvidia-utils \
   nwg-look \
   openssh \
   pamixer \
+  playerctl \
   starship \
+  sushi \
+  ttf-jetbrains-mono \
   ttf-jetbrains-mono-nerd \
   udiskie \
   uwsm \
-  walker \
+  walker-bin \
   waybar \
   wayland-protocols \
   wireplumber \
   wl-clip-persist \
   wl-clipboard \
+  xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
   xorg-xwayland \
   yazi \

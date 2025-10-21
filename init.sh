@@ -1,15 +1,15 @@
 #!/bin/bash
 
-for script in yay.sh packages.sh nvim.sh copy.sh autologin.sh amd.sh nvidia.sh; do
+for script in aur.sh packages.sh nvim.sh copy.sh autologin.sh amd.sh nvidia.sh firewall.sh bluetooth.sh theme.sh; do
   [[ -f "$HOME/zephyrus-setup/$script" ]] || {
     echo "$script not found!"
     exit 1
   }
 done
 
-echo "Installing yay..."
-bash "$HOME/zephyrus-setup/yay.sh" || {
-  echo "yay.sh failed!"
+echo "Installing AUR..."
+bash "$HOME/zephyrus-setup/aur.sh" || {
+  echo "aur.sh failed!"
   exit 1
 }
 
@@ -46,6 +46,24 @@ bash "$HOME/zephyrus-setup/amd.sh" || {
 echo "Configuring Nvidia settings..."
 bash "$HOME/zephyrus-setup/nvidia.sh" || {
   echo "nvidia.sh failed!"
+  exit 1
+}
+
+echo "Configuring firewall settings..."
+bash "$HOME/zephyrus-setup/firewall.sh" || {
+  echo "firewall.sh failed!"
+  exit 1
+}
+
+echo "Configuring bluetooth settings..."
+bash "$HOME/zephyrus-setup/bluetooth.sh" || {
+  echo "bluetooth.sh failed!"
+  exit 1
+}
+
+echo "Configuring theme settings..."
+bash "$HOME/zephyrus-setup/theme.sh" || {
+  echo "theme.sh failed!"
   exit 1
 }
 
